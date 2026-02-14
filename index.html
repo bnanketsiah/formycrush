@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valentine's Surprise for You 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body, html {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffe6e6, #fff0f5);
+    overflow-x: hidden;
+  }
+
+  /* Landing Page */
+  #landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  #landing h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #cc0066;
+    animation: pulse 2s infinite;
+    margin-bottom: 20px;
+  }
+
+  #landing button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff99cc;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  #landing button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+
+  /* Main Page */
+  #main {
+    display: none;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    color: #cc0066;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+  }
+
+  p.intro {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #444;
+  }
+
+  .album {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(255, 230, 230, 0.85);
+    border-radius: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .album h3 {
+    font-family: 'Pacifico', cursive;
+    color: #800040;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+
+  .album p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #444;
+  }
+
+  .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .video-card {
+    width: 160px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #cc0066;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .closing {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #555;
+    font-style: italic;
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #777;
+  }
+
+  /* Animations */
+  @keyframes pulse { 0%,100%{transform:scale(1);}50%{transform:scale(1.05);} }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(-20px);} to{opacity:1;transform:translateY(0);} }
+</style>
+</head>
+<body>
+
+<!-- Landing Page -->
+<div id="landing">
+  <h1>💖 Will you open my Valentine's surprise? 💖</h1>
+  <button id="enterBtn">Open💖</button>
+</div>
+
+<!-- Main Page -->
+<div id="main">
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="melvitto - Stay (feat. Gabzy) (Official Audio) [f7yT7GgltUc].mp3" type="audio/mpeg" />
+  </audio>
+
+  <h2>My Love, Happy Valentine's Day!</h2>
+  <p class="intro">Celebrating this wonderful day with u my love. You're my everything 💕</p>
+
+  <!-- Album 1 -->
+  <div class="album">
+    <h3>You make my heart smile ❤️</h3>
+    <p>Every moment with you feels magical.</p>
+    <div class="video-gallery">
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 1.35.58 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 1.36.24 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 1.36.29 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 1.36.53 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 1.45.49 PM.mp4" type="video/mp4" /></video></div>
+    </div>
+  </div>
+
+  <!-- Album 2 -->
+  <div class="album">
+    <h3>You are my sunshine 🌞</h3>
+    <p>Your smile brightens even my darkest days.</p>
+    <div class="video-gallery">
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.06.22 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.06.09 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.06.00 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.58 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.54 PM.mp4" type="video/mp4" /></video></div>
+    </div>
+  </div>
+
+  <!-- Album 3 -->
+  <div class="album">
+    <h3>You’re my favorite thought 💭</h3>
+    <p>I think of you every moment, and it makes me smile.</p>
+    <div class="video-gallery">
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.44 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.27 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.35 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.29 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.40 PM.mp4" type="video/mp4" /></video></div>
+    </div>
+  </div>
+
+  <!-- Album 4 -->
+  <div class="album">
+    <h3>Forever and always 💞</h3>
+    <p>I hope we share countless beautiful memories together.</p>
+    <div class="video-gallery">
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.27 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.16 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.14 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.10 PM.mp4" type="video/mp4" /></video></div>
+      <div class="video-card"><video loop autoplay muted><source src="WhatsApp Video 2026-02-14 at 3.05.08 PM.mp4" type="video/mp4" /></video></div>
+    </div>
+  </div>
+
+  <div class="closing">
+    <p>With all my love, [Anonymous person] 💖</p>
+  </div>
+
+  <footer>
+    <p>Made with love & devotion ❤️</p>
+  </footer>
+</div>
+
+<script>
+  const enterBtn = document.getElementById('enterBtn');
+  const landing = document.getElementById('landing');
+  const main = document.getElementById('main');
+
+  enterBtn.addEventListener('click', () => {
+    landing.style.display = 'none';
+    main.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
